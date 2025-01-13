@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 71</title>
+</head>
+<body>
+    <h1>Find the largest digit in a number</h1>
+    <h4>Expolre the console</h4>
+    <script>
+ let num = 4569, largest = 0;
+while (num > 0) {
+    let digit = num % 10;
+    if (digit > largest) largest = digit;
+    num = Math.floor(num / 10);
+}
+console.log("Largest digit:", largest);
+
+    </script>
+</body>
+</html>

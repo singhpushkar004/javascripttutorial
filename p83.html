@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 83</title>
+</head>
+<body>
+    <p>Program to Find the Largest of Three Numbers</p>
+    Enter a String to reverse:
+    <input type="text" name="" id="s" placeholder="Enter A string">
+    <button role="button" onclick="check()">Hit</button>
+    <p id="res"></p>
+    <script>
+        
+ function findLargest(a, b, c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+
+console.log(findLargest(10, 20, 15)); 
+
+    </script>
+</body>
+</html>

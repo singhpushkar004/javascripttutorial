@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 49</title>
+</head>
+<body>
+    <p> Print an Alternating 0-1 Triangle</p>
+    <h2>Explore console</h2>
+    <script>
+   for (let i = 1; i <= 5; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+        row += (i + j) % 2 === 0 ? '1' : '0';
+    }
+    console.log(row);
+}
+
+    </script>
+</body>
+</html>

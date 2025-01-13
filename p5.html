@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs 5</title>
+    <style>
+        button{
+            height: 30px;
+            width: 100px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="sum()">Add</button>
+    <button onclick="sub()">Substract</button>
+    <button onclick="mult()">Multiply</button>
+    <button onclick="div()">Division</button>
+    <p id="out"></p>
+    <script>
+        let a = prompt("Enter The First Number");
+        let b = prompt("Enter The Second Number");
+        function sum(){
+            let c = parseFloat(a)+parseFloat(b);
+            alert(c);
+            document.getElementById('out').innerHTML=c;
+
+        }
+        function mult(){
+            let c = parseFloat(a)*parseFloat(b);
+            alert(c);
+            document.getElementById('out').innerHTML=c;
+        }
+        function sub(){
+            let c = parseFloat(a)-parseFloat(b);
+            alert(c);
+            document.getElementById('out').innerHTML=c;
+        }
+        function div(){
+            let c = parseFloat(a)/parseFloat(b);
+            alert(c);
+            document.getElementById('out').innerHTML=c;
+        }
+    </script>
+</body>
+</html>

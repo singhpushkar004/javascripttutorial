@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porgram 98</title>
+</head>
+<body>
+    <p> Display Date and Time Every Second</p>
+    <script>
+        const timeInterval = setInterval(function() {
+    const currentDateTime = new Date();
+    console.log("Current Date and Time: " + currentDateTime);
+}, 1000);
+
+setTimeout(function() {
+    clearInterval(timeInterval);
+    console.log("Date and time display stopped.");
+}, 10000);
+
+    </script>
+</body>
+</html>

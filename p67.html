@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 66</title>
+</head>
+<body>
+    <h1>Reverse a number (e.g., 12345 → 54321)</h1>
+    <h4>Expolre the console</h4>
+    <script>
+  let num = 12345, reverse = 0;
+while (num > 0) {
+    reverse = reverse * 10 + (num % 10);
+    num = Math.floor(num / 10);
+}
+console.log("Reversed number:", reverse);
+
+    </script>
+</body>
+</html>
