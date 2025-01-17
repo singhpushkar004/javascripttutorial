@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 71</title>
+</head>
+<body>
+    <h1>Find the GCD of two numbers</h1>
+    <h4>Expolre the console</h4>
+    <script>
+let a = 36, b = 60;
+while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+}
+console.log("GCD:", a);
+
+    </script>
+</body>
+</html>

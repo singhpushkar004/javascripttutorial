@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 61</title>
+</head>
+<body>
+    <p>Print Numbers in a Spiral Pattern (Square Grid)</p>
+    <h2>Explore console</h2>
+    <script>
+let n = 5;
+let spiral = Array.from({ length: n }, () => Array(n).fill(0));
+let num = 1, top = 0, bottom = n - 1, left = 0, right = n - 1;
+
+while (top <= bottom && left <= right) {
+    for (let i = left; i <= right; i++) spiral[top][i] = num++;
+    top++;
+    for (let i = top; i <= bottom; i++) spiral[i][right] = num++;
+    right--;
+    for (let i = right; i >= left; i--) spiral[bottom][i] = num++;
+    bottom--;
+    for (let i = bottom; i >= top; i--) spiral[i][left] = num++;
+    left++;
+}
+
+for (let i = 0; i < n; i++) {
+    console.log(spiral[i].join('   '));
+}
+
+    </script>
+</body>
+</html>

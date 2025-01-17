@@ -1,0 +1,22 @@
+<!-- Named function -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 81</title>
+ </head>
+ <body>
+    <p>A program to find factorial </p>
+    <script>
+        function fact(n){
+            if(n==0){
+                return 1;
+            }
+            return n*fact(n-1);
+        }
+        
+        console.log(fact(5));
+    </script>
+ </body>
+ </html>

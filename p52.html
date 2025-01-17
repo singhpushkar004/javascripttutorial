@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 53</title>
+</head>
+<body>
+    <p>Print a Hollow Inverted Pyramid</p>
+    <h2>Explore console</h2>
+    <script>
+for (let i = 5; i >= 1; i--) {
+    let row = '';
+    for (let j = 1; j <= 5 - i; j++) {
+        row += ' ';
+    }
+    for (let j = 1; j <= 2 * i - 1; j++) {
+        if (j === 1 || j === 2 * i - 1 || i === 1) {
+            row += '*';
+        } else {
+            row += ' ';
+        }
+    }
+    console.log(row);
+}
+
+    </script>
+</body>
+</html>

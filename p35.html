@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 35</title>
+</head>
+<body>
+    <p>Check for Palindrome</p>
+    <script>
+        let strPalindrome = "madam";
+        let isPalindrome = true;
+        for (let i = 0; i < strPalindrome.length / 2; i++) {
+            if (strPalindrome[i] !== strPalindrome[strPalindrome.length - 1 - i]) {
+                isPalindrome = false;
+                break;
+            }
+        }
+        console.log(strPalindrome, "is Palindrome:", isPalindrome);
+
+    </script>
+</body>
+</html>
